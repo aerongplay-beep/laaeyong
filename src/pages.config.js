@@ -1,13 +1,16 @@
+import { lazy } from 'react';
 import Layout from './Layout.jsx';
 import Home from './pages/Home.jsx';
-import Services from './pages/Services.jsx';
-import Founder from './pages/Founder.jsx';
-import Reservation from './pages/Reservation.jsx';
 import AdminLayout from './pages/admin/AdminLayout.jsx';
-import Dashboard from './pages/admin/Dashboard.jsx';
-import ReservationList from './pages/admin/reservation/List.jsx';
-import ReservationDetail from './pages/admin/reservation/Detail.jsx';
-import AIFlowSettings from './pages/admin/AIFlowSettings.jsx';
+
+const Services = lazy(() => import('./pages/Services.jsx'));
+const Founder = lazy(() => import('./pages/Founder.jsx'));
+const Reservation = lazy(() => import('./pages/Reservation.jsx'));
+const Dashboard = lazy(() => import('./pages/admin/Dashboard.jsx'));
+const ReservationList = lazy(() => import('./pages/admin/reservation/List.jsx'));
+const ReservationDetail = lazy(() => import('./pages/admin/reservation/Detail.jsx'));
+const AIFlowSettings = lazy(() => import('./pages/admin/AIFlowSettings.jsx'));
+
 export const PAGES = {
   Home,
   Services,
