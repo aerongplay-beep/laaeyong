@@ -35,7 +35,6 @@ export default function List() {
   };
   useEffect(() => {
     fetchData(1);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [statusFilter]);
   const fmtDate = (d) => (d ? format(new Date(d), 'yyyy.MM.dd', { locale: ko }) : '-');
   return (

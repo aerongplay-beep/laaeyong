@@ -79,7 +79,7 @@ export default function Services() {
                 <div className="bg-white rounded-3xl overflow-hidden border border-[#556B2F]/10 shadow-sm h-full">
                   {s.img && (
                     <div className="overflow-hidden aspect-[16/9]">
-                      <img src={s.img} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                      <img src={s.img} alt={s.title} loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                     </div>
                   )}
                   <div className="p-6 md:p-7">
@@ -110,7 +110,7 @@ export default function Services() {
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="bg-white rounded-3xl overflow-hidden border border-[#556B2F]/10 shadow-sm h-full">
                   <div className="overflow-hidden aspect-[16/9]">
-                    <img src={s.img} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-6 md:p-7">
                     <h3 className="text-lg font-bold text-[#556B2F]">{s.title}</h3>

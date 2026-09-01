@@ -252,7 +252,7 @@ export default function Home() {
                 <div className="bg-white rounded-3xl overflow-hidden border border-[#556B2F]/10 shadow-sm hover:shadow-lg transition-shadow h-full">
                   {s.img && (
                     <div className="overflow-hidden aspect-[16/9]">
-                      <img src={s.img} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                      <img src={s.img} alt={s.title} loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                     </div>
                   )}
                   <div className="p-6 md:p-7">
@@ -279,7 +279,7 @@ export default function Home() {
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="bg-[#F4F5EC] rounded-3xl overflow-hidden border border-[#556B2F]/10 h-full">
                   <div className="overflow-hidden aspect-[16/9]">
-                    <img src={s.img} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-6 md:p-7">
                     <h4 className="text-lg font-bold text-[#556B2F]">{s.title}</h4>
@@ -385,6 +385,7 @@ export default function Home() {
                 <img
                   src="https://cdn.vibe-x.app/apps/566ba164a6283b2c82b4d9db/assets/original/people-1-104469.png"
                   alt="대표 · 아동발달 전문가"
+                  loading="lazy"
                   className="w-full aspect-square object-cover rounded-2xl"
                 />
                 <div className="mt-5 flex flex-wrap gap-2">
@@ -481,6 +482,7 @@ export default function Home() {
         <img
           src="https://cdn.vibe-x.app/apps/566ba164a6283b2c82b4d9db/assets/original/background-1-104469.png"
           alt="따뜻한 가정 놀이 환경"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#3E4A20]/75" />
