@@ -144,13 +144,16 @@ function RootShell() {
   );
 }
 
-const router = createBrowserRouter([
-  {
-    path: "*",
-    element: <RootShell />,
-    errorElement: <RouterErrorBoundary />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "*",
+      element: <RootShell />,
+      errorElement: <RouterErrorBoundary />,
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 function App() {
   return (

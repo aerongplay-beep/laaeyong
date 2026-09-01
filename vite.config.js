@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => {
   const isProduction = env.VITE_APP_ENV === 'production';
 
   return {
+    base: mode === 'gh-pages' ? '/laaeyong/' : '/',
     plugins: [
       react(),
       ...(!isProduction
