@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import Logo from '@/components/Logo';
 const LINKS = [
   { to: '/', label: '홈' },
   { to: '/Services', label: '서비스' },
@@ -30,11 +31,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
         <Link to="/" className="flex items-center">
-          <img
-            src="https://cdn.vibe-x.app/apps/566ba164a6283b2c82b4d9db/assets/original/logo-0-104469.png"
-            alt="Play Reset"
-            className="h-9 w-auto object-contain"
-          />
+          <Logo iconClassName="text-[#556B2F]" textClassName="text-lg text-[#3E4A20]" />
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           {LINKS.map((l) => (

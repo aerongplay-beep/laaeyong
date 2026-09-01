@@ -19,7 +19,7 @@ export default function Founder() {
             <span className="inline-flex items-center gap-2 bg-[#F5C518] text-[#3E4A20] px-4 py-1.5 rounded-full text-sm font-bold">
               <Heart className="w-4 h-4" /> 대표자 소개
             </span>
-            <h1 className="mt-5 text-3xl md:text-5xl font-extrabold text-[#3E4A20]">Play Reset을 만든 사람</h1>
+            <h1 className="mt-5 text-3xl md:text-5xl font-extrabold text-[#3E4A20]">놀이연구소를 만든 사람</h1>
           </FadeIn>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
             <FadeIn className="lg:col-span-2">

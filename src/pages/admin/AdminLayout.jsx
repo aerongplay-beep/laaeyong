@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { BarChart, Calendar, Settings, LogOut } from 'lucide-react';
 import { vibex } from '@/api/vibexClient';
+import Logo from '@/components/Logo';
 const NAV = [
   { to: '/admin', label: '대시보드', icon: BarChart, exact: true },
   { to: '/admin/reservations', label: '예약 관리', icon: Calendar },
@@ -64,11 +65,7 @@ export default function AdminLayout() {
     <div className="flex h-screen bg-[#F4F5EC]">
       <aside className="w-64 border-r border-[#556B2F]/10 bg-white flex flex-col flex-shrink-0">
         <div className="h-16 flex items-center px-5 border-b border-[#556B2F]/10">
-          <img
-            src="https://cdn.vibe-x.app/apps/566ba164a6283b2c82b4d9db/assets/original/logo-0-104469.png"
-            alt="Play Reset"
-            className="h-8 w-auto object-contain"
-          />
+          <Logo iconClassName="text-[#556B2F]" textClassName="text-base text-[#3E4A20]" />
         </div>
         <nav className="flex-1 p-3 space-y-1">
           {NAV.map((item) => (
@@ -97,7 +94,7 @@ export default function AdminLayout() {
       </aside>
       <div className="flex-1 flex flex-col overflow-hidden">
         <header className="h-16 border-b border-[#556B2F]/10 bg-white flex items-center justify-between px-6 flex-shrink-0">
-          <h1 className="font-bold text-[#3E4A20]">Play Reset 관리자</h1>
+          <h1 className="font-bold text-[#3E4A20]">놀이연구소 관리자</h1>
           <div className="flex items-center gap-3">
             {user?.avatar && (
               <img src={user.avatar} alt={user.name} className="w-8 h-8 rounded-full bg-[#556B2F]/10" />

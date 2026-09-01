@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Loader2, AlertCircle } from 'lucide-react';
 import { vibex } from '@/api/vibexClient';
+import Logo from '@/components/Logo';
 export default function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -73,10 +74,10 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-[#F4F5EC] px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
-          <img
-            src="https://cdn.vibe-x.app/apps/566ba164a6283b2c82b4d9db/assets/original/logo-0-104469.png"
-            alt="Play Reset"
-            className="h-11 w-auto object-contain mx-auto"
+          <Logo
+            className="justify-center"
+            iconClassName="h-11 w-11 text-[#556B2F]"
+            textClassName="text-xl text-[#3E4A20]"
           />
           <p className="mt-3 text-[#3E4A20]/70">관리자 로그인</p>
         </div>

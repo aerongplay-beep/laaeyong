@@ -161,7 +161,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 text-center md:text-left">
             <FadeIn>
               <span className="inline-flex items-center gap-2 bg-[#F5C518] text-[#3E4A20] px-4 py-1.5 rounded-full text-sm font-bold">
-                <Heart className="w-4 h-4" /> Play Reset · 플레이리셋
+                <Heart className="w-4 h-4" /> 놀이연구소
               </span>
             </FadeIn>
             <FadeIn delay={0.05}>
@@ -241,7 +241,7 @@ export default function Home() {
       <section className="w-full bg-[#FDFBF0] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <FadeIn className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3E4A20]">Play Reset이 도와드립니다</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3E4A20]">놀이연구소가 도와드립니다</h2>
             <p className="mt-5 text-lg leading-relaxed text-[#3E4A20]/75">
               놀잇감을 새로 사드리지 않습니다. 지금 집에 있는 놀잇감을 우리 아이 발달에 맞게 다시 살려드립니다.
             </p>
@@ -377,7 +377,7 @@ export default function Home() {
       <section className="w-full bg-[#F4F5EC] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <FadeIn className="text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3E4A20]">Play Reset을 만든 사람</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3E4A20]">놀이연구소를 만든 사람</h2>
           </FadeIn>
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
             <FadeIn className="lg:col-span-2">

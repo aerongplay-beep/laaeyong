@@ -8,7 +8,7 @@ export default function ChatWidget() {
     {
       role: 'assistant',
       content:
-        '안녕하세요, Play Reset 상담 도우미예요. 우리 아이 놀이환경이나 서비스가 우리 집 상황에 맞을지 궁금한 점을 편하게 물어봐 주세요.',
+        '안녕하세요, 놀이연구소 상담 도우미예요. 우리 아이 놀이환경이나 서비스가 우리 집 상황에 맞을지 궁금한 점을 편하게 물어봐 주세요.',
     },
   ]);
   const [input, setInput] = useState('');
@@ -97,7 +97,7 @@ export default function ChatWidget() {
                 <MessageCircle className="w-5 h-5 text-[#3E4A20]" />
               </div>
               <div>
-                <p className="font-bold text-sm leading-tight">Play Reset 상담 도우미</p>
+                <p className="font-bold text-sm leading-tight">놀이연구소 상담 도우미</p>
                 <p className="text-xs text-white/70">서비스 적합 여부를 안내해 드려요</p>
               </div>
             </div>
